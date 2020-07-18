@@ -44,6 +44,7 @@
 # a.insert(4,"呵呵呵")
 # print(a)    
 
+
 # 剪切数据
 # b = a.pop(5)
 # print(a)

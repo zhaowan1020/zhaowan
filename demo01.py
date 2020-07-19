@@ -44,7 +44,6 @@
 # a.insert(4,"呵呵呵")
 # print(a)    
 
-
 # 剪切数据
 # b = a.pop(5)
 # print(a)
@@ -113,3 +112,12 @@ python的语法
 # d = {"name":a,"age":b,"sex":c}
 # print("个人信息:",d)
 
+# name=input("请输入姓名：")
+# age=input("请输入年龄：")
+# sex=input("请输入性别：")
+# userInfo={}
+# userInfo.update(name=name,age=age,sex=sex)
+# userInfo["name"]=name
+# userInfo["age"]=age
+# userInfo["sex"]=sex
+# print(userInfo)

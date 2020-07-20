@@ -100,12 +100,48 @@ for i in range(1,10):
     print()
 """
 # 练习1：模拟红绿灯功能。红灯30次，绿灯35，黄灯3次
-for a in range(1):
+"""
+while True:
     for i in range(1,31):
         print("红灯还有",31-i,"秒结束")
     for j in range(1,36):
         print("绿灯还有",36-j,"秒结束")
     for k in range(1,4):
         print("黄灯还有",4-k,"秒结束")
+
+
+light ={"红灯":30,"绿灯":36,"黄灯":3}
+while True:
+    for i in light:
+        for j in range(light[i]):
+            print(i,"还有",light[i]-j,"秒结束")
+"""
 # 练习2：注册功能
-#     用户输入账号密码，要求账号长度5-8，密码长度6-12，并且账号必须小写字母开头，储存到字典中{username,password}
+# 用户输入账号密码，要求账号长度5-8，密码长度6-12
+# 账号必须小写字母开头，储存到字典中{username,password}
+"""
+register={}
+username=input("请输入账号：")
+password=input("请输入密码：")
+if len(username)>=5 and len(username)<=8:
+    if username[0] in "qwertyuiopasdfghjklzxcvbnm":
+        if len(password)>=6 and len(password)<=12:
+            register[username]=password
+            print("注册成功",register)
+        else:
+            print("密码长度必须是6-12位")
+    else:
+        print("账号必须以小写字母开头")
+else:
+    print("账号长度必须是5-8")
+"""
+# continue作用：跳过某一次循环
+for i in range(10):
+    if i == 3:
+        continue
+    print(i)
+# break作用：跳出/终止循环
+for i in range(10):
+    if i == 5:
+        break
+    print(i)
